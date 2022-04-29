@@ -1,0 +1,38 @@
+{
+  "name": "battleship-game",
+  "version": "1.0.0",
+  "description": "More practice with TDD by creating a battleship game",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RSGerrish/battleship-game.git"
+  },
+  "keywords": [],
+  "author": "Robin Gerrish <robinsgerrish@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RSGerrish/battleship-game/issues"
+  },
+  "homepage": "https://github.com/RSGerrish/battleship-game#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^28.0.2",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "jest": {
+    "modulePaths": ["/shared/vendor/modules"],
+    "moduleFileExtensions": ["js", "jsx"],
+    "moduleDirectories": ["node_modules", "bower_components", "shared"],
+
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/vendor/fileMock.js"
+    }
+  }
+}
